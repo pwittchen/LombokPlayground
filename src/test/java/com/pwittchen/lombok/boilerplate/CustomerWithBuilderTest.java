@@ -1,6 +1,7 @@
 package com.pwittchen.lombok.boilerplate;
 
 import junit.framework.TestCase;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -10,19 +11,32 @@ import static org.fest.assertions.Assertions.assertThat;
 
 public class CustomerWithBuilderTest extends TestCase {
 
+    private int id;
+    private String name;
+    private String surname;
+    private String phone;
+    private String email;
+    private String address;
+    private List<String> products;
+
+    @Before
+    public void setUp() {
+        id = 1;
+        name = "John";
+        surname = "Doe";
+        phone = "+48123456789";
+        email = "john@doe.com";
+        address = "Gliwice, Poland";
+        products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
+    }
+
     @Test
     public void testShouldCompareValuesReturnedByGettersWithGivenValues() {
         // given
-        int id = 1;
-        String name = "John";
-        String surname = "Doe";
-        String phone = "+48123456789";
-        String email = "john@doe.com";
-        String address = "Gliwice, Poland";
-        List<String> products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
+        // data defined in setUp() method
 
         // when
-        Customer customer = CustomerWithBuilder.builder()
+        CustomerWithBuilder customer = CustomerWithBuilder.builder()
                 .id(id)
                 .name(name)
                 .surname(surname)
@@ -44,16 +58,10 @@ public class CustomerWithBuilderTest extends TestCase {
     @Test
     public void testShouldReturnNameInUpperCase() {
         // given
-        int id = 1;
-        String name = "John";
-        String surname = "Doe";
-        String phone = "+48123456789";
-        String email = "john@doe.com";
-        String address = "Gliwice, Poland";
-        List<String> products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
+        // data defined in setUp() method
 
         // when
-        Customer customer = CustomerWithBuilder.builder()
+        CustomerWithBuilder customer = CustomerWithBuilder.builder()
                 .id(id)
                 .name(name)
                 .surname(surname)

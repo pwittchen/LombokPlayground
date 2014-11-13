@@ -1,6 +1,7 @@
 package com.pwittchen.lombok.boilerplate;
 
 import junit.framework.TestCase;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -10,16 +11,29 @@ import static org.fest.assertions.Assertions.assertThat;
 
 public class CustomerTest extends TestCase {
 
+    private int id;
+    private String name;
+    private String surname;
+    private String phone;
+    private String email;
+    private String address;
+    private List<String> products;
+
+    @Before
+    public void setUp() {
+        id = 1;
+        name = "John";
+        surname = "Doe";
+        phone = "+48123456789";
+        email = "john@doe.com";
+        address = "Gliwice, Poland";
+        products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
+    }
+
     @Test
     public void testShouldCompareValuesReturnedByGettersWithGivenValues() {
         // given
-        int id = 1;
-        String name = "John";
-        String surname = "Doe";
-        String phone = "+48123456789";
-        String email = "john@doe.com";
-        String address = "Gliwice, Poland";
-        List<String> products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
+        // test data in setUp() method
 
         // when
         Customer customer = new Customer(id, name, surname, phone, email, address, products);
@@ -36,19 +50,39 @@ public class CustomerTest extends TestCase {
     @Test
     public void testShouldReturnNameInUpperCase() {
         // given
-        int id = 1;
-        String name = "John";
-        String surname = "Doe";
-        String phone = "+48123456789";
-        String email = "john@doe.com";
-        String address = "Gliwice, Poland";
-        List<String> products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
+        // test data in setUp() method
 
         // when
         Customer customer = new Customer(id, name, surname, phone, email, address, products);
 
         // then
         assertThat(customer.getNameWithUpperCase()).isEqualTo(name.toUpperCase());
+    }
+
+    @Test
+    public void testTwoDifferentInstancesOfTheSameClassShouldBeEqual() {
+        // given
+        // test data in setUp() method
+
+        // when
+        Customer customerOne = new Customer(id, name, surname, phone, email, address, products);
+        Customer customerTwo = new Customer(id, name, surname, phone, email, address, products);
+
+        // then
+        assertThat(customerOne.equals(customerTwo)).isTrue();
+    }
+
+    @Test
+    public void testHashcodesOfTwoDifferentInstancesOfTheSameClassShouldBeEqual() {
+        // given
+        // test data in setUp() method
+
+        // when
+        Customer customerOne = new Customer(id, name, surname, phone, email, address, products);
+        Customer customerTwo = new Customer(id, name, surname, phone, email, address, products);
+
+        // then
+        assertThat(customerOne.hashCode()).isEqualTo(customerTwo.hashCode());
     }
 
 }

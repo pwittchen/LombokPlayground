@@ -88,7 +88,7 @@ public class CustomerWithBuilder {
         } else if (!(o instanceof Customer)) {
             return false;
         } else {
-            Customer other = (Customer) o;
+            CustomerWithBuilder other = (CustomerWithBuilder) o;
             if (this.getId() != other.getId()) {
                 return false;
             } else {
@@ -193,7 +193,7 @@ public class CustomerWithBuilder {
 
     @Override
     public String toString() {
-        return "Customer(id=" + this.getId()
+        return "CustomerWithBuilder(id=" + this.getId()
                 + ", name=" + this.getName()
                 + ", surname=" + this.getSurname()
                 + ", phone=" + this.getPhone()
@@ -202,8 +202,8 @@ public class CustomerWithBuilder {
                 + ", products=" + this.getProducts() + ")";
     }
 
-    public static Customer.CustomerBuilder builder() {
-        return new Customer.CustomerBuilder();
+    public static CustomerWithBuilder.CustomerWithBuilderBuilder builder() {
+        return new CustomerWithBuilder.CustomerWithBuilderBuilder();
     }
 
     public static class CustomerWithBuilderBuilder {
