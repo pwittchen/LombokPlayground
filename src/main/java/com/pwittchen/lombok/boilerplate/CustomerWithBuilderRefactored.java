@@ -1,11 +1,13 @@
 package com.pwittchen.lombok.boilerplate;
 
 import lombok.Value;
+import lombok.experimental.Builder;
 
 import java.util.List;
 
 @Value
-public class CustomerRefactored {
+@Builder
+public class CustomerWithBuilderRefactored {
     int id;
     String name;
     String surname;
@@ -13,8 +15,4 @@ public class CustomerRefactored {
     String email;
     String address;
     List<String> products;
-
-    public String getNameWithUpperCase() {
-        return name.toUpperCase();
-    }
 }

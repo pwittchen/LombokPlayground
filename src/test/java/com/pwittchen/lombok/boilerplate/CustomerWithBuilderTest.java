@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.fest.assertions.Assertions.assertThat;
 
-public class CustomerTest extends TestCase {
+public class CustomerWithBuilderTest extends TestCase {
 
     @Test
     public void testShouldCompareValuesReturnedByGettersWithGivenValues() {
@@ -22,7 +22,15 @@ public class CustomerTest extends TestCase {
         List<String> products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
 
         // when
-        Customer customer = new Customer(id, name, surname, phone, email, address, products);
+        Customer customer = CustomerWithBuilder.builder()
+                .id(id)
+                .name(name)
+                .surname(surname)
+                .phone(phone)
+                .email(email)
+                .address(address)
+                .products(products)
+                .build();
 
         // then
         assertThat(customer.getName()).isEqualTo(name);
@@ -45,7 +53,15 @@ public class CustomerTest extends TestCase {
         List<String> products = Arrays.asList("Shiny Sofa", "Flying Drone", "Nerdy Mug");
 
         // when
-        Customer customer = new Customer(id, name, surname, phone, email, address, products);
+        Customer customer = CustomerWithBuilder.builder()
+                .id(id)
+                .name(name)
+                .surname(surname)
+                .phone(phone)
+                .email(email)
+                .address(address)
+                .products(products)
+                .build();
 
         // then
         assertThat(customer.getNameWithUpperCase()).isEqualTo(name.toUpperCase());
