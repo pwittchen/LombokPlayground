@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6426e0-2102-4861-8dbc-8de1662078ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerRefactoredTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerWithBuilderRefactoredTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerWithBuilderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerWithBuilderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LombokPlayground.iml" afterPath="$PROJECT_DIR$/LombokPlayground.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="LombokPlayground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,15 +56,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerWithBuilderTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerWithBuilderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerWithBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26590198" vertical-offset="0" max-vertical-offset="1513">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
               <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40215054" vertical-offset="0" max-vertical-offset="930">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -425,7 +428,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/sample/SneakyThrowsSampleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwittchen/lombok/sample/BuilderSample.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/sample/BuilderSampleTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwittchen/lombok/sample/AccessorsSample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwittchen/lombok/sample/AccessorsFluentSample.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/sample/AccessorsFluentSampleTest.java" />
@@ -443,6 +445,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerRefactoredTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerWithBuilderRefactoredTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerWithBuilderTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1170,16 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40134907" vertical-offset="0" max-vertical-offset="593">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
@@ -1374,12 +1367,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/pwittchen/lombok/boilerplate/CustomerWithBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26590198" vertical-offset="0" max-vertical-offset="1513">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
           <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40215054" vertical-offset="0" max-vertical-offset="930">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

@@ -20,3 +20,4 @@ If you want to check all features of the Lombok, visit its official website and 
 - Official website of Project Lombok: http://projectlombok.org/
 - Feature overview: http://projectlombok.org/features/index.html
 - Tutorial: http://jnb.ociweb.com/jnb/jnbJan2010.html
+- Hrisey (Lombok fork for Android) : https://github.com/mg6maciej/hrisey
