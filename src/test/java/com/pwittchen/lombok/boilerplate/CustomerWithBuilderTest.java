@@ -9,6 +9,12 @@ import java.util.List;
 
 import static org.fest.assertions.Assertions.assertThat;
 
+/**
+ * This is dummy test for presentation purposes
+ * In real-life, we should not test setters and getters, etc. Here we're just library behaviour.
+ * Please note: CustomerWithBuilderRefactoredTest is identical as this one, but with different objects
+ * It shows, that code written by hand has the same behavior as auto-generated code
+ */
 public class CustomerWithBuilderTest extends TestCase {
 
     private int id;

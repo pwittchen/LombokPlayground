@@ -10,12 +10,12 @@ import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 
 /**
- * This is dummy test for presentation purposes.
+ * This is dummy test for presentation purposes
  * In real-life, we should not test setters and getters, etc. Here we're just library behaviour.
- * Please note: CustomerRefactoredTest is identical as this one, but with different objects
+ * Please note: CustomerWithBuilderTest is identical as this one, but with different objects
  * It shows, that code written by hand has the same behavior as auto-generated code
  */
-public class CustomerTest extends TestCase {
+public class CustomerWithBuilderRefactoredTest extends TestCase {
 
     private int id;
     private String name;
@@ -39,10 +39,18 @@ public class CustomerTest extends TestCase {
     @Test
     public void testShouldCompareValuesReturnedByGettersWithGivenValues() {
         // given
-        // test data in setUp() method
+        // data defined in setUp() method
 
         // when
-        Customer customer = new Customer(id, name, surname, phone, email, address, products);
+        CustomerWithBuilderRefactored customer = CustomerWithBuilderRefactored.builder()
+                .id(id)
+                .name(name)
+                .surname(surname)
+                .phone(phone)
+                .email(email)
+                .address(address)
+                .products(products)
+                .build();
 
         // then
         assertThat(customer.getName()).isEqualTo(name);
@@ -56,38 +64,20 @@ public class CustomerTest extends TestCase {
     @Test
     public void testShouldReturnNameInUpperCase() {
         // given
-        // test data in setUp() method
+        // data defined in setUp() method
 
         // when
-        Customer customer = new Customer(id, name, surname, phone, email, address, products);
+        CustomerWithBuilderRefactored customer = CustomerWithBuilderRefactored.builder()
+                .id(id)
+                .name(name)
+                .surname(surname)
+                .phone(phone)
+                .email(email)
+                .address(address)
+                .products(products)
+                .build();
 
         // then
         assertThat(customer.getNameWithUpperCase()).isEqualTo(name.toUpperCase());
-    }
-
-    @Test
-    public void testTwoDifferentInstancesOfTheSameClassShouldBeEqual() {
-        // given
-        // test data in setUp() method
-
-        // when
-        Customer customerOne = new Customer(id, name, surname, phone, email, address, products);
-        Customer customerTwo = new Customer(id, name, surname, phone, email, address, products);
-
-        // then
-        assertThat(customerOne.equals(customerTwo)).isTrue();
-    }
-
-    @Test
-    public void testHashcodesOfTwoDifferentInstancesOfTheSameClassShouldBeEqual() {
-        // given
-        // test data in setUp() method
-
-        // when
-        Customer customerOne = new Customer(id, name, surname, phone, email, address, products);
-        Customer customerTwo = new Customer(id, name, surname, phone, email, address, products);
-
-        // then
-        assertThat(customerOne.hashCode()).isEqualTo(customerTwo.hashCode());
     }
 }
